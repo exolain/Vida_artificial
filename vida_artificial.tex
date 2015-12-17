@@ -74,10 +74,11 @@ Un claro ejemplo del uso de vida artificial es el uso de modelos complejos con e
 Estas tecnolog\'ias permiten a los cient\'ificos poder crear mo\'delos de organismos, o en el caso del estudio de enjambres de abejas, los cuales al ser un conjunto de abejas se les considera un superorganismo, ya que entre todos los organismos individuales se realizan operaciones complejas.\cite{TMRT01} La idea principal detr\'as del estudio era poder ver la coperaci\'on entre dos enjambres, los cuales se comportan de manera aleatoria y al encontrarse con otro, cada organismo interact\'ua individualmente con el otro. Esta investigaci\'on funcion\'o para poder probar que las interacciones aleatorias entre abejas son dependientes del tama\~no de cada conglomerado.  
 
 Adem\'as, existe un estudio alrededor de las hormigas  Leptothorax tuberointerruptus,\cite{LP01}, las cuales formaron parte esencial a la hora de realizar la investigaci\'on para proponer un modelo consistente y continuo el cual permite controlar un algoritmo el cual cree arquitecturas nuevas en sus nidos, donde dicha arquitectura afecta las relaciones f\'isicas que existen entre las hormigas, piedras y feromonas en el ambiente.
-En dicho estudio se realizan pruebas con bastantes variables las cuales son afectadas por dos tipos de hormigas, las hormigas internas y las externas, las cuales forman parte de un una colonia de hormigas y son internas si est\'an dentro del \"nido\" o externas si est\'n fuera de \'el. Luego existe un conjunto de piedras las cuales, las hormigas pueden mover para ir formando la arquitectura del nido, estas piedras van formando el nido conforme el tiempo avanza. Asimismo existe una variante importante la cual se basa en el concepto de feromonas, estas feromonas afectan el comportamiento y movimiento de las hormigas.\cite{LP01}
+En dicho estudio se realizan pruebas con bastantes variables las cuales son afectadas por dos tipos de hormigas, las hormigas internas y las externas como se muestra en la figura ~\ref{fig:ant_based_construction}, las cuales forman parte de un una colonia de hormigas y son internas si est\'an dentro del \"nido\" o externas si est\'n fuera de \'el. Luego existe un conjunto de piedras las cuales, las hormigas pueden mover para ir formando la arquitectura del nido, estas piedras van formando el nido conforme el tiempo avanza. Asimismo existe una variante importante la cual se basa en el concepto de feromonas, estas feromonas afectan el comportamiento y movimiento de las hormigas.\cite{LP01}
 Luego de que las hormigas forman el nido estas forman patrones interesantes, pero los autores explican que dentro de las pruebas estos encontraron que casi siempre los nidos tendi\'an a ser circulares y formar un conglomerado de hormigas internas. 
 
 \begin{figure}[ht]
+\centering
   \includegraphics[width=7cm,height=5cm]{img/ant_based_construction.PNG}
   \caption{Resultados de los nidos de las hormigas. \cite{LP01}  }
   \label{fig:ant_based_construction}
@@ -85,7 +86,7 @@ Luego de que las hormigas forman el nido estas forman patrones interesantes, per
 
 Luego no solamente se realizan los estudios alrededor de un solo organismo, en este caso tenemos que se evalu\'a como los organismos se comportan en un ambiente abierto y se evalu\'an sus movimientos ya que la cantidad de interacciones sociales es proporcional a la cantidad de individuos en el ambiente, asi se ven las interacciones que existen en una poblaci\'on de organismos. \cite{ASTK01, PMLC01}
 Los individuos de la poblaci\'ion son manejadas por un algoritmo probabil\'ístico jer\'arquico el cual sirve para poder detectar las se\~nales externas que puedan afectar el patron de movimiento, ya sea un depredador o una fuente de calor. 
-Para esto se evaluaron 3 poblaciones:
+Para esto se evaluaron 3 poblaciones (lo cual se ilustra en la figura ~\ref{fig:mosquitos}):
 \begin{itemize}
 \item Mosquitos movimiento es generado por factores externos y no perciben a otros mosquitos.
 \item Aves, solamente pueden moverse hacia el frente y tienen un rango de visi\'on limitado, no perciben otras aves.
@@ -93,6 +94,7 @@ Para esto se evaluaron 3 poblaciones:
 \end{itemize}
 
 \begin{figure}[ht]
+\centering
   \includegraphics[width=7cm,height=5cm]{img/mosquitos_sin_nota.JPG}
   \caption{ 1. Dise\~no inicial, 2. Distribuci\'on del enjambre de mosquitos en una etapa intermedia, 3. La distribuci\'on final del enjambre de mosquitos, 4-5 Distribuci\'on intermedia de aves, 6. Distribuci\'on final de aves, 7-8 Distribuci\'on intermedia de peces, 9. Distribuci\'on final de peces \cite{TMRT01} }
   \label{fig:mosquitos}
@@ -125,7 +127,7 @@ El impacto que tiene el entender el comportamiento de las abejas como agente pol
 \subsection{Estudio de abejas por parte de la Universidad Nacional}
 Existen muchos \'ambitos en los que Costa Rica podr\'ia ser part\'icipe a nivel del estudio para estudios futuros en vida artificial. La Universidad Nacional tiene un instituto especializado en el estudio de las abejas tropicales para el desarrollo de una apicultura y meliponicultura sostenible en Costa Rica y Centroam\'erica. \cite{CINAT} . En el CINAT se encuentran una serie de publicaciones y estudios que se han realizado, por ejemplo en el paper publicado en el 2006 por S.E Berrocal se documenta el comportamiento de abejas en un ambiente controlados, Se busc\'o una posici\'on lateral del nido para colectar cargas de polen de las abejas mediante succionadores, este nido se monitoreaba cada 15 minutos durante las 3 horas de la recolecta. Seg\'un se puede ver en la figura ~\ref{fig:muestra} a partir de las 11:15am disminuyeron las abejas y las que llegaban trajeron material resinoso, del cual solo se pudo extraer dos muestras de polen, hay cierta certeza que la lluvia pudo haber impactado en su comportamiento.\cite{APICOLA}
 \begin{figure}[ht]
-%\centering
+\centering
   \includegraphics[width=7cm,height=4cm]{img/muestras.jpg}
   \caption{N\'umero de muestras por intervalo de 15 minutos. \cite{APICOLA}}
   \label{fig:muestra}
@@ -136,7 +138,7 @@ Para la simulaci\'on de abejas artificiales es necesario entender el comportamie
 Las abejas lo que hacen es buscar un mundo con una matriz de sus objetivos y las flores "distractoras", se determinan las distribuciones florales en las cuales cada mecanismo de escaneo visual podr\'ia ser m\'as efectivos en escenarios del mundo real. Estas simulaciones permiten interpretar que factores influencias adem\'as del c\'omo y el porqu\'e las abejas toman decisiones, adem\'as de los beneficios que recibir\'ia a nivel de la colonia como factores relevantes para el \'exito reproductivo.\cite{ZOE01} \\
 
 \begin{figure}[ht]
-%\centering
+\centering
   \includegraphics[width=8cm,height=8cm]{img/serial_honey.jpg}
   \caption{El flujo de escaneo serial de una abeja de miel \cite{ZOE01}}
   \label{fig:serial_honey}
@@ -152,12 +154,12 @@ Tambi\'en se puede sugerir que el cambio de clima puede afectar en la disponibil
 
 Open worm es un estudio y/o proyecto el cual esta intentado re-crear una lombriz utilizando la vida artificial simulado por computadores.  Al simular las mil c\'elulas de la lombriz Caenorhabditis elegans (C. elegans) se lograr\'a entender comportamientos simples y complejos lo cual satisface lo suficiente para poder realizar un estudio compresivo al respecto, esta posee comportamientos clave como: alimentaci\'on, reproducci\'on, evitar depredadores, entre otras caracter\'isticas. \cite{openworm} Todas estas caracteristicas son vitales para poder entender el concepto filos\'ofico de qu\'e es la vida y cu\'ales son sus componentes b\'asicos para el estudio al respecto. \\
 Aunque ha sido estudiado profundamente, a\'un hace falta tener un mayor entendimiento de los principios de su biolog\'ia.
-Aparte una de las grandes ventajas que posee OpenWorm, es que C. elegans es un organismo lo suficientemente sencillo para ser investigado, ya que aparte de ya ser estudiado previamente por muchos cient\’ificos para diversos experimentos en ciencia, medicina y posibles aplicaciones tecnol\’ogicas, el organismo est\’a compuesto de solo 1000 c\’elulas, de las cuales 302 son neuronas. 
+Aparte una de las grandes ventajas que posee OpenWorm, es que C. elegans es un organismo lo suficientemente sencillo para ser investigado, ya que aparte de ya ser estudiado previamente por muchos cient\'ificos para diversos experimentos en ciencia, medicina y posibles aplicaciones tecnol\'ogicas, el organismo est\'a compuesto de solo 1000 c\'elulas, de las cuales 302 son neuronas. 
 Una vez que se logre la meta se espera que esto ayudar\'a a la creaci\'on de otras criaturas virtuales que sean igual de precisas.
 
 \begin{figure}[ht]
-%\centering
-  \includegraphics[width=8cm,height=8cm]{img/openworm.jpg}
+\centering
+  \includegraphics[width=5cm,height=5cm]{img/openworm.JPG}
   \caption{ OpenWorm diagrama de neuronas \cite{openworm}}
   \label{fig:openworm}
 \end{figure}
