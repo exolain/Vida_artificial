@@ -52,7 +52,7 @@ Una vez que se entiende una forma de vida y su comportamiento es posible ayudar 
 A la hora de poder desarrollar, estudiar o crear vida artificial, se debe de tener un entendimiento de la vida en s\'i, donde las m\'ultiples \'areas de la academia han intentado definir, qu\'e es? Los fil\'osofos utilizan t\'erminos para discernir entre lo vivo y lo no-vivo, y son estas cualidades lo que hace a algo pertenecer al \'area de los entes vivos. \cite{lifeStanfordPhi} En el area de la biolog\'ia se utiliza la reproducci\'on y la supervivencia \cite{artificiallifeLevy} como capacidades necesarias con el fin de definir algo como vivo. 
 
 La vida es considerada org\'anica, ya que esta surge naturalmente y es un concepto irremplazable del mundo natural, la cual es un \'area de estudio para los bi\'ologos y dem\'as \'areas de la ciencia y tecnol\'ogia. El concepto de vida ha sido estudiado por cientos de a\~nos, pero siempre existen conflictos a la hora poder definir una definici\'on concreta, por ejemplo: Arist\'oteles defini\'o la vida como la propiedad de un objeto de ser animado, Descartes como un mecanismo, el punto de vista de Kant como una organizaci\'on. \cite{lifeStanfordPhi} \\
-Tambi\'en es importante entender lo que es la vida natural, la cual tiene las siguientes caracter\'isticas \cite{XUY01}:
+Tambi\'en es importante entender lo que es la vida natural, la cual tiene las siguientes caracter\'isticas \cite{XUY01}                                                     :
 \begin{itemize}
 \item Crecimiento natural, evoluci\'on y no hecho por el hombre.
 \item Reproducci\'on sexual, por ejemplo, humanos, otros animales y plantas
@@ -83,7 +83,7 @@ Un claro ejemplo del uso de vida artificial es el uso de modelos complejos con e
 
 hormigas 151 - paper de naty
 
-Este paper es un estudio alrededor de las hormigas  Leptothorax tuberointerruptus,\cite{LP01}, las cuales formaron parte esencial a la hora de realizar la investigacion para porponer un modelo consistente y continuo el cual permite controlar un algoritmo el cual cree arquitecturas nuevas con el fin de demostrar el aprendizaje. % @ intro
+Este paper es un estudio alrededor de las hormigas  Leptothorax tuberointerruptus,\cite{LP01}, las cuales formaron parte esencial a la hora de realizar la investigaci\'on para proponer un modelo consistente y continuo el cual permite controlar un algoritmo el cual cree arquitecturas nuevas con el fin de demostrar el aprendizaje. % @ intro
 
 mosuqitos 657
 
@@ -107,9 +107,31 @@ Aqui podemos comprar los estudios relacionados con el estudio de organismos: hor
 
 \section{Posible contribuci\'on de Costa Rica en vida artificial}
 
-% Hay contribuciones de costa rica en la vida artificial? 
+\subsection{Estudio de abejas por parte de la Universidad Nacional}
+Existen muchos \'ambitos en los que Costa Rica podr\'ia ser part\'icipe a nivel del estudio para estudios futuros en vida artificial. La Universidad Nacional tiene un instituto especializado en el estudio de las abejas tropicales para el desarrollo de una apicultura y meliponicultura sostenible en Costa Rica y Centroam\'erica. \cite{CINAT} . En el CINAT se encuentran una serie de publicaciones y estudios que se han realizado, por ejemplo en el paper publicado en el 2006 por S.E Berrocal se documenta el comportamiento de abejas en un ambiente controlados, Se busc\'o una posici\'on lateral del nido para colectar cargas de polen de las abejas mediante succionadores, este nido se monitoreaba cada 15 minutos durante las 3 horas de la recolecta. Seg\'un se puede ver en la figura ~\ref{fig:muestra} a partir de las 11:15am disminuyeron las abejas y las que llegaban trajeron material resinoso, del cual solo se pudo extraer dos muestras de polen, hay cierta certeza que la lluvia pudo haber impactado en su comportamiento.\cite{APICOLA}
+\begin{figure}[ht]
+%\centering
+  \includegraphics[width=9cm,height=5cm]{img/muestras.jpg}
+  \caption{N\'umero de muestras por intervalo de 15 minutos. \cite{APICOLA}}
+  \label{fig:muestra}
+\end{figure}
 
-Naty? 
+\subsection{Simulaci\'on de Abejas Artificiales}
+Para la simulaci\'on de abejas artificiales es necesario entender el comportamiento biol\'ogico de las abejas, se tiene que las abejas de miel escanean su objetivo de manera serial que son m\'as r\'apidos pero que se vuelven considerablemente lentos cuando los distractores que deben tambi\'en ser procesados por el sistema visual est\'an presentes como se puede mostrar en la figura ~\ref{fig:serial_honey} . As\'i que se tiene informaci\'on finita a nivel del procesamiento visual pero hay una amplia variedad de posibles ambientes naturales. El modelo que se establece en el documento es b\'asicamente basado en la el escaneo de la visi\'on, pero no se considera el olfato que utiliza normalmente las abejas para encontrar las flores(Streinzer, Paulus et al. 2009) \cite{ZOE01}. \\
+Las abejas lo que hacen es buscar un mundo con una matriz de sus objetivos y las flores "distractoras", se determinan las distribuciones florales en las cuales cada mecanismo de escaneo visual podr\'ia ser m\'as efectivos en escenarios del mundo real. Estas simulaciones permiten interpretar que factores influencias adem\'as del c\'omo y el porqu\'e las abejas toman decisiones, adem\'as de los beneficios que recibir\'ia a nivel de la colonia como factores relevantes para el \'exito reproductivo.\cite{ZOE01} \\
+
+\begin{figure}[ht]
+%\centering
+  \includegraphics[width=8cm,height=8cm]{img/serial_honey.jpg}
+  \caption{El flujo de escaneo serial de una abeja de miel \cite{ZOE01}}
+  \label{fig:serial_honey}
+\end{figure}
+
+
+\subsection{Simulaciones y medio ambiente}
+Como se demuestra en el paper de Abejas Artificiales (tambi\'en conocidas como A-bees) se demuestra como las abejas de miel pueden ser m\'as efectivas en ambientes donde los objetivos no son segregados junto con distractores, por otra parte este trabajo fue ejecutado con entradas de comportamiento conocido en abejas en ambiente templado pero todav\'ia es necesario compararlo con abejas tropicales.
+Tambi\'en se puede sugerir que el cambio de clima puede afectar en la disponibilidad de la flor (a nivel de tiempo-espacio) y de los mismos agentes polinizadores debido a la capacidad visual de las abejas. Como tambi\'en se detalla en la observaci\'on de S.E Berrocal (Universidad Nacional) hubo momentos, posiblemente por la lluvia en las que las abejas no polinizaban, el poder entender m\'as fondo estas especies podr\'ia proporcionar informaci\'on importante para el futuro de los manejo de recursos y a la actividad ap\'icola. 
+
 
 \section{Trabajo relacionado}
 
